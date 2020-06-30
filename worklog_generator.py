@@ -18,10 +18,13 @@ def main(write_month=True, write_week_only=False):
 
     :return:
     """
+    resource_file = "./resources/users.json"
+    profiles_file = "./resources/profiles.json"
     runtime_tests_passed = True
 
     wl = worklog.WorkLog
 
+    user_settings_dict= json.load(resource_file)
 
     if runtime_tests_passed:
         status_code = 0
