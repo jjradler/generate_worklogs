@@ -1,0 +1,15 @@
+{
+  "profileName": "Default",
+  "allowedFormats": ["txt", "md", "rst", "html"],
+  "profileData": {
+    "fileFormat": "md",
+    "readLastWeek": true,
+    "readTodoList": true,
+    "outputStyle": "default",
+    "weekStartsOn": "Monday",
+    "fiveDayWeek": true
+    }
+}
+
+
+
