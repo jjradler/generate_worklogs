@@ -18,13 +18,19 @@ def main(write_month=True, write_week_only=False):
 
     :return:
     """
-    resource_file = "./resources/users.json"
+    users_file = "./resources/users.json"
     profiles_file = "./resources/profiles.json"
     runtime_tests_passed = True
+    user_settings_dict= json.load(users_file)
+    profiles_dict = json.load(profiles_file)
+
+    # if username given in command line is not found in the key:value
+    # pairs in the users_file dict(), then start up user manager module...
 
     wl = worklog.WorkLog
+    # switch statement of some sort?
 
-    user_settings_dict= json.load(resource_file)
+
 
     if runtime_tests_passed:
         status_code = 0
