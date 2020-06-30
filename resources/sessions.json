@@ -1,15 +1,9 @@
 {
+"SessionData": {
   "session1": {
     "dateTime": null
-    "firstUsage": true,
-    "useDefaults": false,
-    "userData": {
-      "userName": null,
-      "userMail": null,
-      "userOrg": null
-    }
-  },
-  "session2": {
-
+    "firstUsage": true
   }
-}
+},
+
+

@@ -1,0 +1,41 @@
+{
+  "User1": {
+    "userData": {
+      "userName": null,
+      "userMail": null,
+      "userOrg": null
+    },
+    "userPreferences": {
+      "userHome": null,
+      "userOutputPath": null,
+      "userSignature": true,
+      "firstUsage": true
+    }
+  },
+  "User2": {
+    "userData": {
+      "userName": null,
+      "userMail": null,
+      "userOrg": null
+    },
+    "userPreferences": {
+      "userHome": null,
+      "userOutputPath": null,
+      "userSignature": true,
+      "firstUsage": true
+    }
+  },
+  "User3": {
+    "userData": {
+      "userName": null,
+      "userMail": null,
+      "userOrg": null
+    },
+    "userPreferences": {
+      "userHome": null,
+      "userOutputPath": null,
+      "userSignature": true,
+      "firstUsage": true
+    }
+  }
+}

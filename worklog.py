@@ -12,7 +12,7 @@ class WorkLog:
         self.date = None
         self.time = None
         self.week_monday_dates = list()
-        self._output_file_path =
+        self._output_file_path = None
         self._profile = None
         self._to_dos = dict()
         self._user_data = dict()
@@ -25,6 +25,14 @@ class WorkLog:
     def set_template(self):
         """
         Chooses and sets the templates for weeks and months.
+        :return:
+        """
+        pass
+
+    def read_to_dos(self):
+        """
+        Reads To-Do items from JSON and/or last month's log items that weren't checked off.
+
         :return:
         """
         pass

@@ -22,6 +22,7 @@ def main(write_month=True, write_week_only=False):
 
     wl = worklog.WorkLog
 
+
     if runtime_tests_passed:
         status_code = 0
     else:
@@ -30,7 +31,6 @@ def main(write_month=True, write_week_only=False):
 
 
 if __name__ == "__main__":
-
     status = main()
     try:
         status = 0
