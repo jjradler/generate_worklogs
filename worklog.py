@@ -7,8 +7,9 @@ class WorkLog:
     .. class:: WorkLog
     .. desc:: Generic base class for WorkLog documents
     """
-    def __init__(self, input_path):
+    def __init__(self, input_path, output_format="md"):
         self._last_week_path = input_path
+        self.output_format = output_format      # can be md, rst, txt, or html
         self.date = None
         self.time = None
         self.week_monday_dates = list()
@@ -22,12 +23,25 @@ class WorkLog:
         self._month_header = None
         self._week_header = None
 
-    def set_template(self):
-        """
-        Chooses and sets the templates for weeks and months.
-        :return:
-        """
-        pass
+    @property
+    def template_path(self):
+        return f"./templates/{self.output_format}/header.{self.output_format}"
+
+    @property
+    def template_header(self):
+        with open(self.template_path, "r") as FILE:
+            template_header_string = FILE.readlines()
+        return template_header_string
+
+    @property
+    def template_footer(self):
+        with open(self.template_path, "r") as FILE:
+            template_footer_string = FILE.readlines()
+        return template_footer_string
+
+    @ property
+    def blank_week(self):
+        return blank_week_string
 
     def read_to_dos(self):
         """
@@ -37,14 +51,21 @@ class WorkLog:
         """
         pass
 
-    def write_new_month(self):
+    def set_template(self, template_format):
+        """
+        Chooses and sets the templates for weeks and months.
+        :return:
+        """
+        self.output_format = template_format
+
+    def new_month(self):
         """
         Writes an entire month of blank worklogs with alternating blocks.
         :return:
         """
         pass
 
-    def write_new_week(self):
+    def new_week(self):
         """
         Writes WorkLog file header, user name and data, and any TODOs found in todos.json.
         """

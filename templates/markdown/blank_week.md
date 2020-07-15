@@ -1,1 +1,0 @@
-### Week of {this_week_string}
