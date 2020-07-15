@@ -43,5 +43,5 @@ if __name__ == "__main__":
     status = main()
     try:
         status = 0
-    except RuntimeError("main() has failed at runtime...")
+    except RuntimeError("main() has failed at runtime..."):
         sys.exit()
