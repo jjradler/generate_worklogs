@@ -30,8 +30,6 @@ def main(write_month=True, write_week_only=False):
     wl = worklog.WorkLog
     # switch statement of some sort?
 
-
-
     if runtime_tests_passed:
         status_code = 0
     else:
